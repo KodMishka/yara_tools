@@ -315,7 +315,7 @@ class yara_tools(object):
 						self.__identifier_template, identifier)
 			else:
 				condition = condition.replace(
-					self.__identifier_template, identifier)
+					self.__identifier_template, str(identifier))
 
 			self.add_condition(condition=condition,
 							   condition_group=condition_group,
